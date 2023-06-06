@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'Akira Expanded';
+    src: url('fonts/AkiraExpanded.woff2') format('woff2');
+}
+
+.sidebar {
+    background-image: url('backgroundimage.jpg');
+    background-size: cover;
+    height: 100%;
+    width: 40vw;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+}
+
+.sidebar .logo {
+    font-family:'Akira Expanded';
+    position: fixed;
+    width: 40vw;
+    font-size: 5vw;
+    top: 12.5%;
+    text-align: center;
+}
+
+.maincontent {
+    right: 0;
+    width: 60vw;
+    position: absolute;
+}
