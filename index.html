@@ -11,6 +11,7 @@
 <body>
     <div class="sidebar">
         <div class="logo">BYTECORP</div>
+        <div class="credits">Photo taken by Donny Jiang and uploaded at Unsplash</div>
     </div>
     <div class="maincontent">
         <div class="description">
@@ -38,8 +39,8 @@
                     </div>
                     <div>
                         <label for="phonenumber">PHONE NUMBER</label>
-                        <input type="tel" id="phonenumber" name="phonenumber" placeholder="1234567890" required/>
-                        <span class="error" aria-live="polite"></span>
+                        <input type="tel" pattern="[0-9]*" pattermid="phonenumber" name="phonenumber" placeholder="1234567890" required/>
+                        <span class="numbererror" aria-live="polite"></span>
                     </div>
                     <div>
                         <label for="pwd">PASSWORD</label>

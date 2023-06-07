@@ -31,6 +31,15 @@ body {
     background-color: rgba(255, 255, 255, 0.5);
 }
 
+.sidebar .credits {
+    position: fixed;
+    width: 40vw;
+    font-size: 1vw;
+    top: 95%;
+    text-align: center;
+    color: white;
+}
+
 .maincontent {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin-left: 40vw;
@@ -99,7 +108,8 @@ input:focus-visible {
     box-shadow: 2px 2px 4px darkgray; 
 }
 
-input:invalid:not(:placeholder-shown) {
+input:invalid:not(:placeholder-shown),
+#confirmpwd.confirmerror {
     border: 2px solid red;
     box-shadow: 2px 2px 4px darkgray; 
 }
@@ -122,6 +132,12 @@ input:invalid:not(:placeholder-shown) + span.emailerror:before {
     font-size: 9px;
 }
 
+input:invalid:not(:placeholder-shown) + span.numbererror:before {
+    content: "Please put a valid number.";
+    color: red;
+    font-size: 9px;
+}
+
 input:invalid:not(:placeholder-shown) + span.nameerror:before {
     content: "Please put a valid name.";
     color: red;
@@ -130,7 +146,7 @@ input:invalid:not(:placeholder-shown) + span.nameerror:before {
 
 
 button {
-    background-color: darkgray;
+    background-color: darkslategray;
     color: white;
     width: 45%;
     height: 40px;
@@ -139,4 +155,5 @@ button {
     border-radius: 5px;
     font-size: 1rem;
     box-shadow: 2px 2px 4px darkgray;
+    font-weight: 600;
 }
