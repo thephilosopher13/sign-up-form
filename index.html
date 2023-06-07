@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css" defer></link>
+    <link rel="stylesheet" href="styles.css"></link>
+    <script src="javascript.js"></script>
 </head>
 <body>
     <div class="sidebar">
@@ -17,36 +18,36 @@
             <p>Join today!</p>
         </div>
         <div>
-            <form>
+            <form id="signupform">
                 <fieldset>
                     <legend>Sign Up Form</legend>
                     <div>          
-                        <label for="firstname">First Name</label>
+                        <label for="firstname">FIRST NAME</label>
                         <input type="text" pattern="^[A-Z][A-Za-z\s]*$" id="firstname" name="firstname" placeholder="First Name" required/>
                         <span class="nameerror" aria-live="polite"></span>
                     </div>
                     <div>
-                        <label for="lastname">Last Name</label>
+                        <label for="lastname">LAST NAME</label>
                         <input type="text" pattern="^[A-Z][A-Za-z\s]*$" id="lastname" name="lastname" placeholder="Last Name" required/>
                         <span class="nameerror" aria-live="polite"></span>
                     </div>
                     <div>
-                        <label for="email">Email Address</label>
+                        <label for="email">EMAIL ADDRESS</label>
                         <input type="email" pattern="^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[a-zA-Z]{2,}$" id="mail" name="email" required placeholder="abc@def.com"/>
                         <span class="emailerror" aria-live="polite"></span>
                     </div>
                     <div>
-                        <label for="phonenumber">Phone Number</label>
+                        <label for="phonenumber">PHONE NUMBER</label>
                         <input type="tel" id="phonenumber" name="phonenumber" placeholder="1234567890" required/>
                         <span class="error" aria-live="polite"></span>
                     </div>
                     <div>
-                        <label for="pwd">Password</label>
+                        <label for="pwd">PASSWORD</label>
                         <input type="password" id="pwd" name="pwd" minlength="8" placeholder="        " required/>
                         <span class="passworderror" aria-live="polite"></span>
                     </div>
                     <div>
-                        <label for="confirmpwd">Confirm Password</label>
+                        <label for="confirmpwd">CONFIRM PASSWORD</label>
                         <input type="password" id="confirmpwd" name="confirmpwd" minlength="8" placeholder="        " required/>
                         <span class="confirmpassworderror" id="confirmpwderror" aria-live="polite"></span>
                     </div>
